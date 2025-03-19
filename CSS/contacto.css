@@ -1,0 +1,100 @@
+body {
+    font-family: "Grechen Fuemen", serif;
+    font-weight: 400;
+    font-size: 40px;
+    font-style: normal;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #d8d2cb;
+    
+  }
+  
+/* ESTILOS BARRA NAVEGACION */
+
+.navbar {
+    background-color: #f09f3c;
+    padding: 10px 20px;
+    position: relative;
+    width: 100%;
+    z-index: 1000;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.navbar ul li {
+    margin: 0 15px;
+}
+.navbar ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.activo{
+  
+    border-bottom: 2px solid wheat;
+}
+
+#map{
+    width: 98%;
+    height: 600px;
+}
+
+/* CONTENIDO */
+
+
+.textoh1{
+    text-align: center;
+    border: solid 1px black;
+    padding: 10px;
+    margin: 15px;
+}
+
+h3{
+   text-align: center; 
+   border-bottom: 1px solid black;
+   margin: 20px;
+}
+
+p{
+    margin: 25px;
+}
+
+.datos{
+    margin: 20px;
+}
+
+h2{
+    text-align: center; 
+    border-bottom: 1px solid black;
+    margin: 20px;
+ }
+
+ #map{
+    margin: 15px;
+ }
+/* ESTILOS FOOTER */
+
+footer {
+    position: relative;
+    margin-top: auto;
+    bottom: 0;
+    width: 100%;
+    background-color: #f09f3c;
+    text-align: center;
+    padding: 10px 0; 
+}
+
+.redes {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+}
+.social img:hover {
+    transform: scale(1.2);
+}
+

@@ -1,0 +1,150 @@
+<!--  1. Pagina de inicio:
+  contiene 4 secciones y una en archivo externo JSON 
+
+  2. Galeria:
+  galeria.html pagina dinamica con libreria javascript
+
+  3. Presupuesto:
+  presupuesto.html formulario dividido en dos partes
+  *Datos de contacto: 
+  -Nombre: Solo letras max15
+  -Apellido: Solo letra max40
+  -Telf: Solo numero max9
+  -Correo: Estandares de correo nnn_nn@zzz.xxx
+  *Presupuesto:
+  -Producto: Etiqueta html para elejir 4 opciones cada una con un precio
+  -Plazo: Utilizar etiqueta input numerico para indicar el numero de dias para recibir el producto, segun el valor se aplica un descuento
+  -Extras: Varias etiquetas para que marque las opciones que quiera y el valor auumentara con cada opcion
+  -Presupuesto: Este apartado muestra al usuario el presupuesto final y se actualiza solo con cada cambio que haga sin botones
+  -Condiciones y envio del presupuesto: una opcion para aceptar los terminos y condiciones, otra para enviar el formulario,
+   boton para resetear formulario y los campos deben estar validados
+
+   4. Pagina de contacto:
+   contacto.html añadir mapa dinamico que calcule la ruta a la ubicacion del cliente haciendo uso de librerias y la api OpenStreetMaps, 
+   datos de contacto y ubicacion de empresa, debe tener estilo atractivo
+
+   *+ Elementos obligatorios para todas las paginas:
+   -nombre de la pagina o logotipo: En la parte superior o en la barra de navegacion
+   -Barra de navegacion: Debera resaltar con los estilos de css y debera mantenerse fija aunque haga scroll
+   -Footer: Logotipos de redes sociales, direccion de empresa y aviso legal
+    -->
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Passero+One&display=swap" rel="stylesheet">
+    
+
+</head>
+<body>
+    <h1>
+        <img src="assets/image/portada/portada.png" width="900" height="309" alt="onepiece">
+    </h1>
+
+    <!-- BARRA NAVEGACION -->
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#" class="activo">Inicio</a></li>
+            <li><a href="views/galeria.html">Galeria</a></li>
+            <li><a href="views/presupuesto.html">Presupuesto</a></li>
+            <li><a href="views/contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- CONTENIDO -->
+
+    <section id="noticias">
+        <h2>Noticias del anime</h2>
+        <div>
+
+        </div>
+    </section>
+
+    <section id="autor">
+        <h2>Sobre el autor</h2>
+        <img src="assets/image/autores/eichiro oda.png" width="180" height="124" alt="eichiro oda">
+        <p>
+            Eiichiro Oda (1 de enero de 1975, Kunamoto, Japón) es un célebre mangaka, conocido mundialmente como el creador de One Piece,
+            el manga más vendido de todos los tiempos.
+            Su obra corta, el western  Wanted, dibujada mientras estudiaba en el instituto, ganó la 44.ª edición del Premio Tezuka (1992).
+            Después de trabajar como ayudante, debuta profesionalmente en 1997 con One Piece, publicada en Weekly Shonen Jump.
+            convirtiéndose en el manga más comprado en el mundo y el más vendido de la revista Shonen Jump de la editorial Shueisha. 
+            Además, ha conseguido coronarse, con sus más de 500 millones de copias vendidas, como el manga más vendido de la historia,
+            superando a rivales tan fuertes como el manga Naruto, y siendo considerado en Japón como todo un fenómeno social.
+            A pesar de que Eiichiro Oda en un principio pensó la obra para que no durara más de 5 años pero disfruta tanto de la historia que actualmente
+            se sigue publicando después de 24 años, con más de 1000 capítulos publicados y 97 volúmenes recopilatorios tankobon.
+            Gracias al éxito obtenido, en 1999 se estrenó en Japón la producción adaptada del manga en formato anime. Se han estrenado,
+            además, varias películas basadas en distintos episodios de One Piece.
+            Eiichiro Oda está casado con la exmodelo y actriz Chiaki Inaba. Precisamente, la conoció cuando ella
+            interpretaba a Nami en el espectáculo One Piece Spectacle Stage, un musical realizado entre 2002 y 2004 para el festival Jump Festa.
+            Se casaron en 2004, y fruto de esa unión, han tenido dos hijos. Residen en el barrio tokiota de Nerima.
+        </p>
+    </section>
+
+    <section id="influencia">
+        <h2>Influencia en Japon</h2>
+        <p>
+            En 1963, el artista de manga y animador Osamu Tezuka, lanzó la serie de televisión Astro Boy (1963–1966),
+            basada en su manga del mismo nombre, la cual tuvo un éxito temprano e influyente. El trabajo de Tezuka,
+            inspiró a otros pioneros en el campo, es así que aparecieron las series de anime con temática de robots,
+            como Gundam (1980) y Neon Genesis Evangelion (1995).
+            En la década de 1990,el anime comenzó a captar el interés de los países occidentales, entre los principales éxitos internacionales incluyen Sailor Moon y Dragon Ball Z.
+            Posteriormente, en 2003, apareció el viaje de Chihiro, un largometraje de Studio Ghibli, dirigido por Hayao Miyazaki.
+            Desde la década del 2000, un mayor número de obras de anime han sido adaptaciones de mangas, (historietas de origen japonés);
+            ejemplos exitosos incluyen Jujutsu Kaisen (2018), reconocido como el anime más popular del mundo según Guinness World Records,
+            y Kimetsu no Yaiba (2019).
+
+        </p>
+    </section>
+
+    <section id="galeria">
+        <h2>Otros referentes</h2>
+        <div>
+            <img src="assets/image/autores/Akira toriyama.png" width="210" height="240" alt="akira toriyama">
+            <p>Akira Toriyama</p>
+            <p>Autor de Dragon Ball</p>
+        </div>
+        <div>
+            <img src="assets/image/autores/Masashi kishimoto.png" width="176" height="220" alt="masashi kishimoto">
+            <p>Masashi Kishimoto</p>
+            <p>Autor de Naruto</p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+        <div class="footer">
+            <div class="social">
+                <a href="https://facebook.com">
+                    <img class="redes" src="assets/image/Footer/letter-f_7199750.png" width="512" height="512" alt="facebook">
+                </a>
+                <a href="https://es.linkedin.com">
+                    <img class="redes" src="assets/image/Footer/linkedin_5968991.png" width="512" height="512" alt="linkedin">
+                </a>
+                <a href="https://instagram.com">
+                    <img class="redes" src="assets/image/Footer/instagram_4494468.png" width="512" height="512" alt="instagram">
+                </a>
+            </div>
+            <div class="direccion">
+                <p>Calle La Fuente, Utrera, Sevilla</p>
+            </div>
+            <div class="avisoLegal">
+                <a href="https://es.wikipedia.org/wiki/Aviso_legal">Aviso Legal</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPT -->
+
+    <script src="JS/script.js"></script>
+</body>
+</html>

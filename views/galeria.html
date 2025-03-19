@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo</title>
+   
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/galeria.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Passero+One&display=swap" rel="stylesheet">
+    
+
+
+  
+
+</head>
+<body>
+    <h1>
+        <img src="../assets/image/portada/portada.png" width="900" height="309" alt="onepiece">
+    </h1>
+
+    <!-- BARRA NAVEGACION -->
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="#" class="activo">Galeria</a></li>
+            <li><a href="presupuesto.html">Presupuesto</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- CONTENIDO -->
+
+    <div class="container1">
+        <h1 class="h1">Carrusel de Imagenes</h1>
+        <div class="carrusel">
+            <img id="imageCarrusel" src="../assets/image/Galeria/onePiece1.png" width="225" height="225" alt="imagenOnePiece">
+        </div>
+    </div>
+
+    <!-- SEGGUNDO CARRUSEL -->
+
+    <div class="container2 mt-4">
+        <h2>Ejemplo de carrusel con flechas</h2>
+        <div id="ejempo-de-carrusel" class="carousel slide" data-bs-ride="carousel"><!--(data-bs-ride para que se mueva automaticamente al cargar la pagina)-->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-flex justify-content-center">
+                    <img src="../assets/image/Galeria/onePiece12.png" width="225" height="225" alt="Barba Negra">
+                    </div>
+                    <div class="textocarrusel">
+                        <h5>Barba Negra</h5>
+                        <p>Uno de los 4 Yonkou</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                    <img src="../assets/image/Galeria/onePiece10.png" width="251" height="201" alt="Robin">
+                    </div>
+                    <div class="textocarrusel">
+                        <h5>Robin</h5>
+                        <p>Tripulacion de luffy.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                    <img src="../assets/image/Galeria/onePiece13.png" width="217" height="233" alt="Zoro">
+                    </div>
+                    <div class="textocarrusel">
+                        <h5>Zoro</h5>
+                        <p>Mano derecha del rey de los piratas.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#ejempo-de-carrusel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#ejempo-de-carrusel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </div>
+
+      
+    
+
+    <!-- FOOTER -->
+
+    <footer>
+        <div>
+            <div class="social">
+                <a href="https://facebook.com">
+                    <img class="redes" src="../assets/image/Footer/letter-f_7199750.png" width="512" height="512" alt="facebook">
+                </a>
+                <a href="https://es.linkedin.com">
+                    <img class="redes" src="../assets/image/Footer/linkedin_5968991.png" width="512" height="512" alt="linkedin">
+                </a>
+                <a href="https://instagram.com">
+                    <img class="redes" src="../assets/image/Footer/instagram_4494468.png" width="512" height="512" alt="instagram">
+                </a>
+            </div>
+            <div class="direccion">
+                <p>Calle La Fuente, Utrera, Sevilla</p>
+            </div>
+            <div class="avisoLegal">
+                <a href="https://es.wikipedia.org/wiki/Aviso_legal">Aviso Legal</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>  
+    <script src="../JS/galeria.js"></script>
+</body>
+</html>

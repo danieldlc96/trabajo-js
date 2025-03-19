@@ -1,0 +1,12 @@
+{
+    "noticias": [
+      {
+        "titulo": "Nuevo episodio de One Piece",
+        "contenido": "El último episodio ha dejado a los fans emocionados. Comienza nuevo arco y nuevos personajes poderosos a los que tendra que enfrentar para llegar a ser el rey de los piratas."
+      },
+      {
+        "titulo": "Anuncio de la nueva película",
+        "contenido": "Una nueva película de One Piece ha sido confirmada para el próximo año. Sera publicada a finales de año por la revista jump."
+      }
+    ]
+  }

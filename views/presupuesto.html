@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo</title>
+    <link rel="stylesheet" href="../CSS/presupuesto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Passero+One&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <h1>
+        <img src="../assets/image/portada/portada.png" width="900" height="309" alt="onepiece">
+    </h1>
+
+    <!-- BARRA NAVEGACION -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="#" class="activo">Presupuesto</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- FORMULARIO -->
+
+    <div class="contenedorform">
+        <form id="formulario">
+            <fieldset>
+                <legend>Datos de contacto</legend>
+            
+                <div class="contenedorInput">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre">
+                    <span class="error" id="nombreError"></span>
+                </div>
+                <div class="contenedorInput">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" name="apellido">
+                    <span class="error" id="apellidoError"></span>
+                </div>    
+                <div class="contenedorInput">    
+                    <label for="telefono">Telefono</label>
+                    <input type="text" id="telefono" name="telefono">
+                    <span class="error" id="telefonoError"></span>
+                </div>
+                <div class="contenedorInput">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                    <span class="error" id="emailError"></span>
+                </div>
+                <div class="contenedorBoton">
+                <button type="submit">Enviar</button>
+                </div>    
+            </fieldset>
+        </form>
+
+        <form id="presupuestoForm">
+            <fieldset>
+                <legend>Presupuesto</legend>
+                <!-- SELECCION PRODUCTO -->
+
+                <div>
+                    <label for="producto" class="label">Producto:</label>
+                    <select id="producto" required>
+                        <option value="">Seleccione un producto</option>
+                        <option value="10">100x60cm - $10</option>
+                        <option value="20">150x90cm - $20</option>
+                        <option value="30">210x120cm - $30</option>
+                        <option value="40">260x150cm - $40</option>
+                    </select>
+                </div>
+
+                <!-- PLAZO DE ENTREGA -->
+
+                <label for="plazo" class="label">Plazo de entrega(dias):</label>
+                <input type="number" id="plazo" min="1" max="30" value="5" required>
+
+                <!-- EXTRAS -->
+
+                <div>
+                    <label class="label">Extras:</label>
+                    <input type="radio" class="extra" value="5" name="extra">Embalaje Estandar (+$5) <br>
+                    <input type="radio" class="extra" value="10" name="extra">Embalaje Premiun (+$10) <br>
+                    <input type="radio" class="extra" value="20" name="extra">Envio Rapido ($20) <br>
+          
+                </div>
+
+                <!-- PRESUPUESTO TOTAL -->
+
+                <label class="label">Presupuesto Total:</label>
+                <div class="precio" id="totalPrecio">$0</div>
+
+                <!-- ACEPTAR TERMINOS -->
+
+                <label class="label">
+                    <input type="checkbox" id="terminos">Acepto los terminos y condiciones
+                </label>
+
+                <!-- BOTON ENVIO Y BORRAR -->
+
+                <button type="submit">Enviar</button>
+                <button type="reset">Borrar</button>
+            </fieldset>
+        </form>
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer>
+        <div>
+            <div class="social">
+                <a href="https://facebook.com">
+                    <img class="redes" src="../assets/image/Footer/letter-f_7199750.png" width="512" height="512" alt="facebook">
+                </a>
+                <a href="https://es.linkedin.com">
+                    <img class="redes" src="../assets/image/Footer/linkedin_5968991.png" width="512" height="512" alt="linkedin">
+                </a>
+                <a href="https://instagram.com">
+                    <img class="redes" src="../assets/image/Footer/instagram_4494468.png" width="512" height="512" alt="instagram">
+                </a>
+            </div>
+            <div class="direccion">
+                <p>Calle La Fuente, Utrera, Sevilla</p>
+            </div>
+            <div class="avisoLegal">
+                <a href="https://es.wikipedia.org/wiki/Aviso_legal">Aviso Legal</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="../JS/formulario.js"></script>
+</body>
+</html>
